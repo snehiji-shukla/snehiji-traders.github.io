@@ -23,7 +23,35 @@ section{padding:65px 0}.section-title{text-align:center;max-width:700px;margin:0
 /* YouTube Button Style (Same size as others) */
 .yt-btn{background:#ff0000;color:white;padding:13px 18px;border-radius:12px;font-weight:700;display:inline-block;text-align:center;}
 .yt-btn:hover{background:#cc0000;}
-@media(max-width:750px){.hero,.contactbox{grid-template-columns:1fr}.grid,.gallery{grid-template-columns:1fr}.nav a{display:none}.hero{padding-top:45px}section{padding:48px 0}.photo{height:200px}.logo img{height:60px}.logo span{font-size:18px}.logo{gap:12px}}
+/* 👇 NEW OFFER BUTTON STYLE 👇 */
+.offer-btn{
+  background:linear-gradient(135deg,#25D366,#128C7E);
+  color:white;
+  padding:13px 24px;
+  border-radius:12px;
+  font-weight:800;
+  display:inline-block;
+  text-align:center;
+  box-shadow:0 6px 18px rgba(37,211,102,.45);
+  animation:pulse 2s infinite;
+}
+.offer-btn:hover{background:linear-gradient(135deg,#128C7E,#075E54);}
+@keyframes pulse{
+  0%{box-shadow:0 6px 18px rgba(37,211,102,.45);}
+  50%{box-shadow:0 6px 28px rgba(37,211,102,.85);}
+  100%{box-shadow:0 6px 18px rgba(37,211,102,.45);}
+}
+/* नेविगेशन में New Offer लिंक */
+.nav .offer-nav{
+  background:#25D366;
+  padding:8px 14px;
+  border-radius:8px;
+  font-weight:700;
+  color:white !important;
+  opacity:1 !important;
+}
+/* 👆 NEW OFFER BUTTON STYLE 👆 */
+@media(max-width:750px){.hero,.contactbox{grid-template-columns:1fr}.grid,.gallery{grid-template-columns:1fr}.nav a{display:none}.hero{padding-top:45px}section{padding:48px 0}.photo{height:200px}.logo img{height:60px}.logo span{font-size:18px}.logo{gap:12px}.nav .offer-nav{display:inline-block !important;}}
 </style>
 </head>
 <body>
@@ -33,14 +61,21 @@ section{padding:65px 0}.section-title{text-align:center;max-width:700px;margin:0
         <span>SNEHIJI TRADERS</span>
         <img src="logo1.webp" alt="Snehiji Traders Logo">
     </div>
-    <div><a href="#products">Products</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+    <div>
+        <a href="#products">Products</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <!-- 👇 नेविगेशन में New Offer लिंक 👇 -->
+        <a class="offer-nav" href="https://whatsapp.com/channel/0029VbE2ZEb0QeahGG7eiW1m" target="_blank">🔔 New Offer</a>
+    </div>
 </nav>
 <div class="hero"><div><div class="eyebrow">Powder Coating Recycling & Trading</div><h1>Reliable Powder.<br>Responsible Recycling.</h1><p>Powder coating scrap collection, recycling and trading solutions for industrial customers.</p>
 <div class="buttons">
     <a class="btn primary" href="https://wa.me/918004004009">WhatsApp Enquiry</a>
     <a class="btn secondary" href="tel:+918004004009">Call 8004004009</a>
-    <!-- 👇 यहाँ YouTube बटन बाकी बटन्स के बराबर साइज़ में है 👇 -->
     <a class="yt-btn" href="https://youtube.com/@snehiji" target="_blank">▶️ Watch</a>
+    <!-- 👇 यहाँ NEW OFFER बटन है 👇 -->
+    <a class="offer-btn" href="https://whatsapp.com/channel/0029VbE2ZEb0QeahGG7eiW1m" target="_blank">🔔 New Offer</a>
 </div>
 </div>
 <div class="visual"><svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg"><rect width="520" height="360" rx="20" fill="#ffffff10"/><path d="M60 270h400" stroke="#fff" stroke-opacity=".2" stroke-width="3"/><g fill="#e8e2ff"><path d="M85 245V125h95v120z"/><path d="M105 125V92h55v33z"/><path d="M205 245V150h115v95z"/><path d="M330 245V105h105v140z"/></g><g fill="#6f4be2"><circle cx="120" cy="165" r="13"/><circle cx="155" cy="200" r="13"/><circle cx="242" cy="185" r="13"/><circle cx="282" cy="215" r="13"/><circle cx="365" cy="145" r="13"/><circle cx="402" cy="190" r="13"/></g><path d="M95 75c70-45 145-25 190-5 55 25 100 5 145-35" fill="none" stroke="#d8ceff" stroke-width="6" stroke-linecap="round"/></svg></div></div></div></header>
@@ -51,14 +86,12 @@ section{padding:65px 0}.section-title{text-align:center;max-width:700px;margin:0
 <div class="photo"><svg viewBox="0 0 400 260"><rect width="400" height="260" fill="#24273a"/><rect x="65" y="65" width="270" height="145" rx="12" fill="#ddd9ec"/><rect x="90" y="90" width="220" height="95" rx="8" fill="#6a4ad0"/><path d="M125 135h150" stroke="#fff" stroke-width="9" stroke-linecap="round"/><path d="M155 155h90" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg><span>Packed Material</span></div>
 </div></div></section>
 <section id="contact" class="contact"><div class="wrap"><div class="contactbox"><div><div class="eyebrow">Get in touch</div><h2>Let's discuss your requirement.</h2><p>Snehiji Traders<br>Omicron C-98, Greater Noida, Uttar Pradesh, India</p><div class="signature">— स्नेही जी</div></div><div><a href="tel:+918004004009">📞 <strong>8004004009</strong><br><small>Call us</small></a><a href="https://wa.me/918004004009">💬 <strong>WhatsApp</strong><br><small>Send an enquiry</small></a><a href="mailto:snehiji@gmail.com">✉️ <strong>snehiji@gmail.com</strong><br><small>Email us</small></a>
-<!-- 👇 QR कोड यहाँ है 👇 -->
 <div class="qr-box">
     <h4 style="margin:0 0 10px; color:white;">Scan & Pay</h4>
     <img src="gpay_qr.webp" alt="GPay QR Code">
     <p>UPI ID: <strong>snehiji@okaxis</strong></p>
     <p>Scan with any UPI app</p>
 </div>
-<!-- 👆 QR कोड यहाँ तक 👆 -->
 </div></div></div></section>
 <div class="footer">© 2026 Snehiji Traders. All rights reserved.</div>
 </body></html>
