@@ -10,20 +10,22 @@
 a{text-decoration:none;color:inherit}.wrap{max-width:1100px;margin:auto;padding:0 20px}
 header{background:linear-gradient(135deg,#17192b,#30215b 55%,#5b35d5);color:white;padding:18px 0 70px}
 .nav{display:flex;justify-content:space-between;align-items:center}
-/* यहाँ टेक्स्ट और लोगो के बीच गैप बढ़ाया गया है और लोगो बड़ा किया गया है */
 .logo{display:flex;align-items:center;gap:20px}
 .logo span{font-size:24px;font-weight:800;letter-spacing:1px}
 .logo img{height:85px;width:auto;display:block}
 .nav a{margin-left:18px;font-size:14px;opacity:.9}
 .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center;padding-top:65px}.eyebrow{letter-spacing:2px;text-transform:uppercase;font-size:12px;color:#d7cbff;font-weight:700}.hero h1{font-size:clamp(40px,6vw,66px);line-height:.98;margin:12px 0}.hero p{font-size:18px;line-height:1.65;color:#e4e3ef}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn{padding:13px 18px;border-radius:12px;font-weight:700;display:inline-block}.primary{background:white;color:#3c268f}.secondary{border:1px solid #aaa0d8;color:white}.visual{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);border-radius:25px;padding:18px;box-shadow:0 20px 50px #08091455}.visual svg{width:100%;display:block}
 section{padding:65px 0}.section-title{text-align:center;max-width:700px;margin:0 auto 35px}.section-title h2{font-size:34px;margin:0 0 10px}.section-title p{color:var(--muted);line-height:1.6}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 8px 25px #1a21400b}.icon{font-size:30px}.card h3{margin:13px 0 8px}.card p{color:var(--muted);line-height:1.55}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.photo{height:220px;border-radius:18px;overflow:hidden;background:linear-gradient(135deg,#23263b,#6a45d4);position:relative}.photo img{width:100%;height:100%;object-fit:cover;display:block}.photo svg{width:100%;height:100%}.photo span{position:absolute;left:15px;bottom:13px;color:white;font-weight:700;background:#111827b8;padding:7px 10px;border-radius:9px}.contact{background:var(--dark);color:white}.contactbox{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact p{color:#bfc5d6;line-height:1.6}.contact a{display:block;background:#24283a;border:1px solid #353b51;padding:15px;border-radius:12px;margin:10px 0}.contact strong{color:white}.footer{padding:25px 0;text-align:center;color:#7b8498;font-size:13px}.signature{text-align:right;margin-top:20px;font-style:italic;color:#cfc8ff}
+/* QR Code Section Style */
+.qr-box{background:#24283a;border:1px solid #353b51;border-radius:12px;padding:20px;text-align:center;margin-top:15px;}
+.qr-box img{width:180px;height:180px;object-fit:contain;background:white;padding:10px;border-radius:10px;display:block;margin:0 auto 10px;}
+.qr-box p{font-size:13px;color:#bfc5d6;margin:0;}
 @media(max-width:750px){.hero,.contactbox{grid-template-columns:1fr}.grid,.gallery{grid-template-columns:1fr}.nav a{display:none}.hero{padding-top:45px}section{padding:48px 0}.photo{height:200px}.logo img{height:60px}.logo span{font-size:18px}.logo{gap:12px}}
 </style>
 </head>
 <body>
 <header id="home"><div class="wrap">
 <nav class="nav">
-    <!-- यहाँ टेक्स्ट और लोगो दोनों साथ में हैं -->
     <div class="logo">
         <span>SNEHIJI TRADERS</span>
         <img src="logo1.webp" alt="Snehiji Traders Logo">
@@ -34,13 +36,19 @@ section{padding:65px 0}.section-title{text-align:center;max-width:700px;margin:0
 <div class="visual"><svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg"><rect width="520" height="360" rx="20" fill="#ffffff10"/><path d="M60 270h400" stroke="#fff" stroke-opacity=".2" stroke-width="3"/><g fill="#e8e2ff"><path d="M85 245V125h95v120z"/><path d="M105 125V92h55v33z"/><path d="M205 245V150h115v95z"/><path d="M330 245V105h105v140z"/></g><g fill="#6f4be2"><circle cx="120" cy="165" r="13"/><circle cx="155" cy="200" r="13"/><circle cx="242" cy="185" r="13"/><circle cx="282" cy="215" r="13"/><circle cx="365" cy="145" r="13"/><circle cx="402" cy="190" r="13"/></g><path d="M95 75c70-45 145-25 190-5 55 25 100 5 145-35" fill="none" stroke="#d8ceff" stroke-width="6" stroke-linecap="round"/></svg></div></div></div></header>
 <section id="products"><div class="wrap"><div class="section-title"><h2>Our Products & Services</h2><p>Focused on practical industrial requirements, consistent material handling and long-term business relationships.</p></div><div class="grid"><article class="card"><div class="icon">♻️</div><h3>Powder Coating Scrap</h3><p>Collection and trading of powder coating overspray, booth powder and suitable scrap material.</p></article><article class="card"><div class="icon">⚙️</div><h3>Recycled Powder</h3><p>Recycled powder material prepared for suitable industrial applications and customer requirements.</p></article><article class="card"><div class="icon">📦</div><h3>Trading & Supply</h3><p>Flexible packing and supply options for customers looking for regular powder material.</p></article></div></div></section>
 <section id="gallery"><div class="wrap"><div class="section-title"><h2>Photo Gallery</h2><p>Product photos can be added here anytime. The gallery is designed so new images can be added later.</p></div><div class="gallery">
-<!-- पहली फोटो (पुरानी) -->
 <div class="photo"><img src="IMG_20261001_230102.webp" alt="Snehiji Traders"><span>Powder Coating Material</span></div>
-<!-- दूसरी फोटो (नई - 6 घंटे पहले वाली) -->
 <div class="photo"><img src="IMG_20261002_042028.webp" alt="Recycling and Processing"><span>Recycling & Processing</span></div>
-<!-- तीसरी फोटो (डमी इमेज) -->
 <div class="photo"><svg viewBox="0 0 400 260"><rect width="400" height="260" fill="#24273a"/><rect x="65" y="65" width="270" height="145" rx="12" fill="#ddd9ec"/><rect x="90" y="90" width="220" height="95" rx="8" fill="#6a4ad0"/><path d="M125 135h150" stroke="#fff" stroke-width="9" stroke-linecap="round"/><path d="M155 155h90" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg><span>Packed Material</span></div>
 </div></div></section>
-<section id="contact" class="contact"><div class="wrap"><div class="contactbox"><div><div class="eyebrow">Get in touch</div><h2>Let's discuss your requirement.</h2><p>Snehiji Traders<br>Omicron C-98, Greater Noida, Uttar Pradesh, India</p><div class="signature">— स्नेही जी</div></div><div><a href="tel:+918004004009">📞 <strong>8004004009</strong><br><small>Call us</small></a><a href="https://wa.me/918004004009">💬 <strong>WhatsApp</strong><br><small>Send an enquiry</small></a><a href="mailto:snehiji@gmail.com">✉️ <strong>snehiji@gmail.com</strong><br><small>Email us</small></a></div></div></div></section>
+<section id="contact" class="contact"><div class="wrap"><div class="contactbox"><div><div class="eyebrow">Get in touch</div><h2>Let's discuss your requirement.</h2><p>Snehiji Traders<br>Omicron C-98, Greater Noida, Uttar Pradesh, India</p><div class="signature">— स्नेही जी</div></div><div><a href="tel:+918004004009">📞 <strong>8004004009</strong><br><small>Call us</small></a><a href="https://wa.me/918004004009">💬 <strong>WhatsApp</strong><br><small>Send an enquiry</small></a><a href="mailto:snehiji@gmail.com">✉️ <strong>snehiji@gmail.com</strong><br><small>Email us</small></a>
+<!-- 👇 यहाँ QR कोड जोड़ दिया गया है 👇 -->
+<div class="qr-box">
+    <h4 style="margin:0 0 10px; color:white;">Scan & Pay</h4>
+    <img src="gpay_qr.webp" alt="GPay QR Code">
+    <p>UPI ID: <strong>snehiji@okaxis</strong></p>
+    <p>Scan with any UPI app</p>
+</div>
+<!-- 👆 QR कोड यहाँ तक 👆 -->
+</div></div></div></section>
 <div class="footer">© 2026 Snehiji Traders. All rights reserved.</div>
 </body></html>
